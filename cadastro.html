@@ -3,6 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Adicionei algumas tags meta para melhorar o SEO do seu site -->
+  <meta name="author" content="Seu nome">
+  <meta name="description" content="Um site para conscientizar sobre a violência contra a pessoa idosa">
+  <meta name="keywords" content="violência, idoso, conscientização, denúncia, cadastro">
   <title>Cadastro</title>
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -23,9 +27,13 @@
         <label for="senha">Senha:</label>
         <input type="password" id="senha" name="senha" required>
         
-        <button type="submit">Cadastrar</button>
+        <!-- Adicionei um atributo onclick para enviar os dados do formulário para uma função JavaScript -->
+        <button type="submit" onclick="enviarDados()">Cadastrar</button>
       </form>
     </div>
   </div>
+  <!-- Adicionei um script para validar e enviar os dados do formulário -->
+  <script src="script.js"></script>
 </body>
 </html>
+

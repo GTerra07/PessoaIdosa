@@ -1,5 +1,12 @@
 /* styles.css */
 
+/* Adicionei variáveis CSS para armazenar valores que eu uso repetidamente */
+:root {
+  --primary-color: #ff5a5f;
+  --secondary-color: #e04146;
+  --text-color: #555;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -16,12 +23,12 @@ body {
 }
 
 h1 {
-  color: #333;
+  color: var(--text-color);
   text-align: center;
 }
 
 p {
-  color: #555;
+  color: var(--text-color);
   line-height: 1.5;
   margin-bottom: 20px;
 }
@@ -29,8 +36,8 @@ p {
 .cta-button {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #ff5a5f;
-  color: #fff;
+  background-color: var(--primary-color);
+  color: white;
   text-decoration: none;
   border-radius: 5px;
   transition: background-color 0.3s ease;
@@ -38,7 +45,7 @@ p {
 }
 
 .cta-button:hover {
-  background-color: #e04146;
+  background-color: var(--secondary-color);
 }
 
 .image-container {
@@ -59,26 +66,26 @@ form {
 }
 
 label {
-  display: block;
-  margin-bottom: 10px;
-  color: #555;
+  display: inline-block; /* Mudei o display para inline-block para alinhar os labels e os inputs */
+  margin-right: 10px; /* Mudei a margem para a direita para criar um espaço entre os labels e os inputs */
+  color: var(--text-color);
 }
 
-textarea {
-  width: 100%;
-  padding: 8px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  margin-bottom: 10px;
-  resize: vertical;
+input {
+  width: 200px; /* Adicionei uma largura fixa para os inputs */
+  padding: 8px; /* Adicionei um padding para os inputs */
+  border-radius: 5px; /* Adicionei um border-radius para os inputs */
+  border: 1px solid #ccc; /* Adicionei uma borda para os inputs */
+  margin-bottom: 10px; /* Adicionei uma margem inferior para os inputs */
 }
 
 button[type="submit"] {
-  display: block;
-  margin: 0 auto;
-  padding: 10px 20px;
-  background-color: #ff5a5f;
-  color: #fff;
+  display: inline-block; /* Mudei o display para inline-block para alinhar o botão com os inputs */
+  margin-left: auto; /* Mudei a margem para a esquerda para criar um espaço entre o botão e os inputs */
+  padding-left: 20px; /* Aumentei o padding esquerdo do botão */
+  padding-right: 20px; /* Aumentei o padding direito do botão */
+  background-color: var(--primary-color);
+  color: white;
   text-decoration: none;
   border-radius: 5px;
   transition: background-color 0.3s ease;
@@ -87,7 +94,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  background-color: #e04146;
+  background-color: var(--secondary-color);
 }
 
 .box {
