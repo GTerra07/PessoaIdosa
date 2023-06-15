@@ -70,7 +70,7 @@ p {
 .box {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start; /* Alinhamento à esquerda */
   margin-top: 40px;
 }
 
@@ -92,7 +92,7 @@ p {
 .form-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start; /* Alinhamento à esquerda */
   justify-content: center;
   background-color: var(--primary-color);
   padding: 20px;
@@ -101,12 +101,11 @@ p {
   color: white;
   margin-top: 40px;
   width: 300px; /* Defina a largura desejada para a caixa */
-  margin-left: auto; /* Centraliza a caixa horizontalmente */
-  margin-right: auto; /* Centraliza a caixa horizontalmente */
 }
 
 form {
   text-align: center;
+  margin-top: 20px; /* Adicionado para espaçamento entre a foto e o formulário */
 }
 
 .label-container {
