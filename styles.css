@@ -1,24 +1,25 @@
 /* styles.css */
 
-/* Adicionei variáveis CSS para armazenar valores que eu uso repetidamente */
+/* Variáveis de cores */
 :root {
-  --primary-color: #ff5a5f;
-  --secondary-color: #e04146;
-  --text-color: #555;
+  --primary-color: #ff5a5f; /* Cor primária (laranja) */
+  --secondary-color: #e04146; /* Cor secundária (laranja escura) */
+  --text-color: #555; /* Cor do texto */
+  --background-color: #f7f7f7; /* Cor de fundo */
 }
 
+/* Estilos globais */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f7f7f7;
+  background-color: var(--background-color);
 }
 
 .container {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
-  position: relative;
   text-align: center;
 }
 
@@ -58,33 +59,83 @@ p {
   height: auto;
 }
 
-/* Additional styles for cadastro.html */
+/* Estilos adicionais para cadastro.html */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.box .image-container {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Adicionei um efeito de sombra ao redor da imagem */
+}
+
+.box .image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-color);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Adicionei um efeito de sombra ao redor da caixa */
+  color: white;
+  margin-top: 40px;
+  width: 300px; /* Defina a largura desejada para a caixa */
+  margin-left: auto; /* Centraliza a caixa horizontalmente */
+  margin-right: auto; /* Centraliza a caixa horizontalmente */
+}
 
 form {
   text-align: center;
-  margin-top: 20px;
 }
 
-label {
-  display: inline-block; /* Mudei o display para inline-block para alinhar os labels e os inputs */
-  margin-right: 10px; /* Mudei a margem para a direita para criar um espaço entre os labels e os inputs */
-  color: var(--text-color);
+.label-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.label-container label {
+  display: inline-block;
+  font-weight: bold;
+  margin-right: 10px;
+  color: white;
 }
 
 input {
-  width: 200px; /* Adicionei uma largura fixa para os inputs */
-  padding: 8px; /* Adicionei um padding para os inputs */
-  border-radius: 5px; /* Adicionei um border-radius para os inputs */
-  border: 1px solid #ccc; /* Adicionei uma borda para os inputs */
-  margin-bottom: 10px; /* Adicionei uma margem inferior para os inputs */
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 10px;
 }
 
 button[type="submit"] {
-  display: inline-block; /* Mudei o display para inline-block para alinhar o botão com os inputs */
-  margin-left: auto; /* Mudei a margem para a esquerda para criar um espaço entre o botão e os inputs */
-  padding-left: 20px; /* Aumentei o padding esquerdo do botão */
-  padding-right: 20px; /* Aumentei o padding direito do botão */
-  background-color: var(--primary-color);
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: var(--secondary-color);
   color: white;
   text-decoration: none;
   border-radius: 5px;
@@ -94,22 +145,5 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  background-color: var(--secondary-color);
-}
-
-.box {
-  display: flex;
-  align-items: center;
-}
-
-.box .image-container {
-  width: 200px;
-  text-align: center;
-  margin-right: 20px;
-}
-
-.box .image-container img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 50%;
+  background-color: #c53034; /* Substitua pela cor laranja escura do seu projeto */
 }
