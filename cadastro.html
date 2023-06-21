@@ -6,39 +6,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cadastro</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 
 <body>
   <div class="container">
     <header>
       <h1>Dia da Conscientização da Violência contra a Pessoa Idosa</h1>
-      <p>Seja bem-vindo(a) ao nosso site dedicado à conscientização e combate à violência contra a pessoa idosa. Ao se cadastrar, você estará se juntando a nós nessa importante luta por um mundo mais seguro e inclusivo para os idosos.</p>
-      <p>O cadastro é rápido e simples, e sua participação é fundamental para fortalecer nossa comunidade e ampliar nossa capacidade de fazer a diferença. Ao se cadastrar, você terá acesso a informações exclusivas, recursos e oportunidades de engajamento.</p>
-      <p>Contamos com você! Junte-se a nós e ajude-nos a criar um futuro melhor para nossos idosos.</p>
+      <p>Seja bem-vindo(a) ao nosso site dedicado à conscientização e combate à violência contra a pessoa idosa. Ao se cadastrar, você estará se juntando a nós nessa importante causa.</p>
     </header>
-    <div class="box">
+
+    <section class="box">
       <div class="image-container">
-        <img src="idososfelizes.avif" alt="Imagem de perfil">
+        <img src="idososfelizes.avif" alt="Imagem de idoso sorrindo">
       </div>
+
       <div class="form-container">
-        <h2>Cadastro</h2>
         <form id="cadastroForm">
-          <label for="nome">Nome:</label>
-          <input type="text" id="nome" name="nome" required>
-          
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required>
-          
-          <label for="senha">Senha:</label>
-          <input type="password" id="senha" name="senha" required>
-          
+          <div class="label-container">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+          </div>
+
+          <div class="label-container">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+
+          <div class="label-container">
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required>
+          </div>
+
+          <div class="label-container">
+            <label for="confirmarSenha">Confirmar senha:</label>
+            <input type="password" id="confirmarSenha" name="confirmarSenha" required>
+          </div>
+
           <button type="submit">Cadastrar</button>
         </form>
       </div>
-    </div>
+    </section>
   </div>
-
-  <script src="script.js"></script>
 </body>
 
 </html>
