@@ -1,15 +1,11 @@
-/* styles.css */
-
-/* Variáveis de cores */
 :root {
-  --primary-color: #ff5a5f; /* Cor primária (laranja) */
-  --secondary-color: #e04146; /* Cor secundária (laranja escura) */
-  --text-color: #555; /* Cor do texto */
-  --background-color-top: #f7f7f7; /* Cor de fundo do topo do degradê */
-  --background-color-bottom: #ff5a5f; /* Cor de fundo da base do degradê */
+  --primary-color: #ff5a5f; 
+  --secondary-color: #e04146;
+  --text-color: #555; 
+  --background-color-top: #f7f7f7; 
+  --background-color-bottom: #ff5a5f; 
 }
 
-/* Estilos globais */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -20,7 +16,7 @@ body {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
-  text-align: center;
+  text-align: justify;
 }
 
 h1 {
@@ -59,8 +55,6 @@ p {
   height: auto;
 }
 
-/* Estilos adicionais para cadastro.html */
-
 body.cadastro {
   background: linear-gradient(to bottom, var(--background-color-top), var(--background-color-bottom));
   min-height: 100vh;
@@ -75,7 +69,7 @@ body.cadastro {
 .box {
   display: flex;
   align-items: center;
-  justify-content: flex-start; /* Alinhamento à esquerda */
+  justify-content: flex-start; 
   margin-top: 40px;
 }
 
@@ -85,7 +79,7 @@ body.cadastro {
   border-radius: 50%;
   overflow: hidden;
   margin-right: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Adicionei um efeito de sombra ao redor da imagem */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .box .image-container img {
@@ -97,20 +91,20 @@ body.cadastro {
 .form-container {
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Alinhamento à esquerda */
+  align-items: flex-start; 
   justify-content: center;
   background-color: var(--primary-color);
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Adicionei um efeito de sombra ao redor da caixa */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
   color: white;
   margin-top: 40px;
-  width: 300px; /* Defina a largura desejada para a caixa */
+  width: 300px; 
 }
 
 form {
   text-align: center;
-  margin-top: 20px; /* Adicionado para espaçamento entre a foto e o formulário */
+  margin-top: 20px; 
 }
 
 form .label-container {
@@ -140,8 +134,6 @@ form input[type="submit"] {
   cursor: pointer;
 }
 
-/* Estilos adicionais para violenciaIdoso.html */
-
 .violencia-container {
   display: flex;
   flex-wrap: wrap;
@@ -157,17 +149,8 @@ form input[type="submit"] {
   margin: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  text-align: justify;
 }
-
-.violencia-item h2 {
-  margin-top: 0;
-}
-
-.violencia-item p {
-  margin-bottom: 0;
-}
-
-/* Estilos adicionais para denunciaIdoso.html */
 
 .denuncia-form {
   background-color: var(--primary-color);
@@ -182,6 +165,7 @@ form input[type="submit"] {
 
 .form-group {
   margin-bottom: 20px;
+  text-align: left;
 }
 
 .form-group label {
@@ -213,7 +197,7 @@ form input[type="submit"] {
 }
 
 .denuncia-button.selected {
-  background-color: coral; /* Nova cor para botão selecionado */
+  background-color: coral; 
 }
 
 input[type="submit"] {
@@ -226,7 +210,7 @@ input[type="submit"] {
 }
 
 .imagemidoso {
-  margin-top: 20px; /* Ajuste o valor conforme necessário */
+  margin-top: 20px; 
 }
 
 .logo-container {
