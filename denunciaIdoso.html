@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Faça sua denúncia aqui</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="logo-container">
+        <a href="index.html">
+          <img src="logo.png" alt="Logo" class="logo">
+        </a>
+    </div>
+  <div class="container">
+    <h1>Faça sua denúncia aqui</h1>
+    <p>Sua coragem em denunciar a violência é essencial para proteger seus direitos e buscar ajuda. Não se cale, você merece viver livre de abusos e receber apoio. Denuncie e dê o primeiro passo rumo a uma vida mais segura e digna.</p>
+    <div class="denuncia-form">
+      <p>Preencha o formulário abaixo para registrar sua denúncia:</p>
+      <form>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="tipo-denuncia">Tipo de denúncia:</label>
+          <div class="denuncia-options">
+            <button type="button" class="denuncia-button" data-tipo="fisica">Física</button>
+            <button type="button" class="denuncia-button" data-tipo="psicologica">Psicológica</button>
+            <button type="button" class="denuncia-button" data-tipo="financeira">Financeira</button>
+            <button type="button" class="denuncia-button" data-tipo="negligencia">Negligência</button>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="detalhes">Detalhes da denúncia:</label>
+          <textarea id="detalhes" name="detalhes" rows="4" required></textarea>
+        </div>
+        <div class="form-group">
+          <input type="submit" value="Enviar Denúncia">
+        </div>
+      </form>
+    </div>
+    <img src="idososUnidos.jpeg" alt="idososUnidos" class="imagemidoso">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
